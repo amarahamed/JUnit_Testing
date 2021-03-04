@@ -49,6 +49,7 @@ class RectangleTest {
         rectangle.setLength(50);
         assertEquals(50, rectangle.getLength());
     }
+
     @Test
     void setLengthInvalidLowValue()
     {
@@ -63,8 +64,6 @@ class RectangleTest {
         {
             System.out.println(e.getMessage());
         }
-        rectangle.setLength(50);
-        assertEquals(50, rectangle.getLength());
     }
 
     @Test
