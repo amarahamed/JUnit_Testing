@@ -29,6 +29,7 @@ public class Circle {
     public String toString ()
     {
         // " .1f " only display 1 digit after decimal point
-        return String.format("Circle with radius %.1f", radius);
+        // .0f no decimal places
+        return String.format("Circle with radius %.0f", radius);
     }
 }
