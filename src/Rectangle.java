@@ -13,14 +13,14 @@ public class Rectangle
      */
     public int getPerimeter()
     {
-        return 0;
+        return width * 2 + length * 2;  // change it later
     }
     /*
         Area = L * W
      */
     public int getArea()
     {
-        return 0;
+        return length*width;
     }
 
 
@@ -29,7 +29,14 @@ public class Rectangle
     }
 
     public void setLength(int length) {
-        this.length = length;
+        if (length>0)
+        {
+            this.length = length;
+        }
+        else
+        {
+            throw new IllegalArgumentException(" Length should be greater than 0");
+        }
     }
 
     public int getWidth() {
@@ -37,6 +44,14 @@ public class Rectangle
     }
 
     public void setWidth(int width) {
-        this.width = width;
+        if (width > 0)
+        {
+            this.width = width;
+        }
+        else
+        {
+            throw new IllegalArgumentException("Width should be greater than 0");
+        }
+
     }
 }
