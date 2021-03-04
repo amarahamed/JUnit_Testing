@@ -1,4 +1,5 @@
-public class Triangle {
+public class Triangle implements TwoDimensionalShape
+{
 
     private double base;
     private double height;

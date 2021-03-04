@@ -1,4 +1,7 @@
-public class Circle {
+// circle class implements the TwoDimensionalShape interface
+
+public class Circle implements TwoDimensionalShape
+{
     private double radius;
 
     public Circle(double radius) {

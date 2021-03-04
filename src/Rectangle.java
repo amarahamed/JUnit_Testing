@@ -1,4 +1,5 @@
-public class Rectangle
+// rectangle class implements the TwoDimensionalShape interface
+public class Rectangle implements TwoDimensionalShape
 {
     private int length, width;
 
@@ -18,7 +19,7 @@ public class Rectangle
     /*
         Area = L * W
      */
-    public int getArea()
+    public double getArea()
     {
         return length*width;
     }
@@ -53,5 +54,9 @@ public class Rectangle
             throw new IllegalArgumentException("Width should be greater than 0");
         }
 
+    }
+    public String toString()
+    {
+        return String.format("Rectangle with a length of %o and width of %o",length,width);
     }
 }
